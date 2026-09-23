@@ -38,9 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ]);
 
         echo "<h1>Cadastro realizado com sucesso</h1><br>";
-        echo "Nome: " . htmlspecialchars($nome) . "<br>";
-        echo "E-mail: " . htmlspecialchars($email) . "<br>";
-        echo "Telefone: " . htmlspecialchars($telefone);
+       
 
     } catch (PDOException $e) {
         die("Erro ao conectar ou gravar no Neon: " . $e->getMessage());
